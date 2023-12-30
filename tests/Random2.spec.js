@@ -1,14 +1,14 @@
 import { test, expect } from '@playwright/test';
 
 test('test', async ({ page }) => {
-
+//this is to check for modification update
     //await page.waitForURL('https://testautomationpractice.blogspot.com/');
   await page.goto('https://testautomationpractice.blogspot.com/');
   await page.locator('#name').fill('First name only');
   await page.locator('#email').click();
   await page.locator('#email').fill('ajodav23@gmail.co');
   await page.locator('#phone').click();
-  await page.locator('#phone').fill('2722883583');
+  await page.locator('#phone').fill('27228835546');
   await page.getByLabel('Male', { exact: true }).check();
   await page.getByLabel('Female').check();
   await page.getByLabel('Female').check();
